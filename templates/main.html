@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DemoSetup</title>
+    <title>NET_EM_GUI</title>
 </head>
 <body>
 <h4>Available Interfaces</h4>
@@ -20,32 +20,57 @@
                     <tr>
                         <td>Rate:</td>
                         <td>{{ rule['rate'] }}</td>
-                        <td><input type="text" name="Rate" size="5"> in Mbit</td>
+                        <td><input type="text" name="Rate" size="3"> in Mbit</td>
                     </tr>
                     <tr>
                         <td>Delay:</td>
                         <td>{{ rule['delay'] }}</td>
-                        <td><input type="text" name="Delay" size="5"> in ms</td>
+                        <td><input type="text" name="Delay" size="3"> in ms</td>
+                    </tr>
+                     <tr>
+                        <td>Delay distri.:</td>
+                        <td>{{ rule['delay'] }}</td>
+                        <td><input type="text" name="DelayDist" size="3">+- in ms</td>
                     </tr>
                     <tr>
                         <td>Loss:</td>
                         <td>{{ rule['loss'] }}</td>
-                        <td><input type="text" name="Loss" size="5"> in %</td>
+                        <td><input type="text" name="Loss" size="3"> in %</td>
+                    </tr>
+                                        <tr>
+                        <td>Loss distri.:</td>
+                        <td>{{ rule['loss'] }}</td>
+                        <td><input type="text" name="LossDist" size="3">+- %</td>
                     </tr>
                     <tr>
                         <td>Duplicate:</td>
                         <td>{{ rule['duplicate'] }}</td>
-                        <td><input type="text" name="Duplicate" size="5"> in %</td>
+                        <td><input type="text" name="Duplicate" size="3"> in %</td>
+                    </tr>
+                                        <tr>
+                        <td>Duplicate distri.:</td>
+                        <td>{{ rule['duplicate'] }}</td>
+                        <td><input type="text" name="DuplicateDist" size="3">+- %</td>
                     </tr>
                     <tr>
                         <td>Reorder:</td>
                         <td>{{ rule['reorder'] }}</td>
-                        <td><input type="text" name="Reorder" size="5"> in %</td>
+                        <td><input type="text" name="Reorder" size="3"> in %</td>
+                    </tr>
+                     <tr>
+                        <td>Reorder distri.:</td>
+                        <td>{{ rule['reorder'] }}</td>
+                        <td><input type="text" name="ReorderDist" size="3"> +- %</td>
                     </tr>
                     <tr>
                         <td>Corrupt</td>
                         <td>{{ rule['corrupt'] }}</td>
-                        <td><input type="text" name="Corrupt" size="5"> in %</td>
+                        <td><input type="text" name="Corrupt" size="3"> in %</td>
+                    </tr>
+                     <tr>
+                        <td>Corrupt distri.</td>
+                        <td>{{ rule['corrupt'] }}</td>
+                        <td><input type="text" name="CorruptDist" size="3">+- %</td>
                     </tr>
                 </table>
                 <input type="submit" value="Apply Rules">
