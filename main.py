@@ -35,6 +35,14 @@ def new_rule(interface):
     reorder = request.form['Reorder']
     corrupt = request.form['Corrupt']
     rate = request.form['Rate']
+    
+    # added rules
+    rate = request.form['Delaydist']
+    rate = request.form['Lossdist']
+    rate = request.form['Duplicatedist']
+    rate = request.form['Reorderdist']
+    rate = request.form['Corruptdist']
+
 
     # remove old setup
     command = 'tc qdisc del dev %s root netem' % interface
